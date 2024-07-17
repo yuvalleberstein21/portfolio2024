@@ -7,13 +7,44 @@
 }
 html,
 body {
-  box-sizing: border-box;
-  width: 100%;
-  background-color: #18181b;
+  height: 100vh;
+  width: 100vw;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  height: 100vh;
 }
+.section_banner {
+  height: 100vh;
+  background: url('./assets/20251948_6227820.webp');
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.stacks_page {
+  height: 350px;
+  background-color: #1e293b;
+}
+.projects_page {
+  background-color: #334155;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+/* :root {
+  --background-color: #e4e4e7;
+  --text-color: black !important;
+  --background-image: none;
+} */
+
+/* [data-theme='dark'] {
+  --background-color: #000;
+  --text-color: white !important;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+} */
+
 .name {
   font-size: 3rem !important;
   line-height: 4rem !important;
@@ -83,3 +114,45 @@ body {
 }
 
 /* bg-amber-600 */
+
+/* TOGGLE LIGHT DARK MODE */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
