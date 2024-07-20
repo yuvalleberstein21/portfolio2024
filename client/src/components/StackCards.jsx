@@ -13,10 +13,12 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
 
 
 const technologies = [
-    { name: 'HTML & CSS', icon: <FaHtml5 size={30} /> },
+    { name: 'HTML', icon: <FaHtml5 size={30} /> },
+    { name: 'CSS', icon: <FaCss3Alt size={30} /> },
     { name: 'React', icon: <FaReact size={30} /> },
     { name: 'Vite.js', icon: <TbBrandVite size={30} /> },
     { name: 'TypeScript', icon: <TbBrandTypescript size={30} /> },
@@ -34,7 +36,7 @@ const StackCards = () => {
         dots: false,
         arrows: false,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,

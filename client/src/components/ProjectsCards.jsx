@@ -36,7 +36,7 @@ const ProjectsCards = () => {
     return (
         <>
             {projectData.map((project, index) => (
-                <div data-aos="zoom-in" key={index} className="flex flex-col mt-2 items-center min-w-full bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-5xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b] p-10">
+                <div data-aos="zoom-in" data-aos-once="true" key={index} className="flex flex-col mt-2 items-center min-w-full bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-5xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b] p-10">
                     <div className='w-1/2 flex justify-center'>
                         <img className="object-cover w-full rounded-t-lg h-64 min-w-56 md:h-auto md:min-w-52 rounded-lg md:rounded-none md:rounded-s-lg" src={project.image} alt="SimlessWEB" />
                     </div>
@@ -60,7 +60,6 @@ const ProjectsCards = () => {
                                 <i className="fa-solid fa-arrow-right m-1"></i>
                             </button>
                         </div>
-
                     </div>
                 </div>
             ))}
