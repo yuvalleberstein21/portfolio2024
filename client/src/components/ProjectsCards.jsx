@@ -18,7 +18,7 @@ const projectData = [
         name: 'Vacation Management', stacks: ['ReactJS', 'NodeJS', 'Express', 'BOOTSTRAP', 'MySQL'], github: 'https://github.com/yuvalleberstein21/My-Projects/tree/main/vacationsProject', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: Vacations
     },
     {
-        name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: Portfolio
+        name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', livePreview: 'daf', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: Portfolio
     }
 ]
 
@@ -53,7 +53,7 @@ const ProjectsCards = () => {
                         <div className='text-center flex justify-between gap-1 mt-5'>
                             {project.github && (
                                 <a href={project.github} target="_blank"
-                                    rel="noopener noreferrer" className='p-2 border border-gray-200 text-md rounded-full text-gray-200 w-full hover:bg-gray-700'>
+                                    rel="noopener noreferrer" className='p-2 md:w-1/2 w-full border py-2 border-gray-200 text-md rounded-full text-gray-200  hover:bg-gray-700'>
                                     <i className="fa-brands fa-github m-1"></i>
                                     GitHub Repository
                                 </a>
@@ -61,7 +61,7 @@ const ProjectsCards = () => {
                             {
                                 project.livePreview && (
                                     <a href={project.livePreview} target="_blank"
-                                        rel="noopener noreferrer" className='p-2 border border-gray-200 text-md rounded-full text-gray-200 w-full hover:bg-gray-700'>
+                                        rel="noopener noreferrer" className='p-2 md:w-1/2 w-full text-center items-center py-2 border border-gray-200 text-md rounded-full text-gray-200 hover:bg-gray-700'>
                                         Live preview
                                         <i className="fa-solid fa-arrow-right m-1"></i>
                                     </a>

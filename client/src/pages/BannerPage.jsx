@@ -5,8 +5,8 @@ const BannerPage = () => {
 
     return (
 
-        <div className="flex flex-col md:flex-row w-full justify-center items-center">
-            <div className="rounded flex justify-center items-center md:h-[500px] h-[450px]">
+        <div className="flex flex-col md:flex-row w-full justify-center items-center md:h-[100vh]">
+            <div className="md:mb-20 min-h-[550px] mt-20">
                 <SectionBanner />
             </div>
         </div>

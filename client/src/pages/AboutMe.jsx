@@ -28,8 +28,8 @@ const AboutMe = () => {
                         has the ability to face challenges, determined, diligent, consistent and self disciplined.
                     </p>
                 </div>
-                <div data-aos="fade-left" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg relative flex justify-center items-center rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700'>
-                    <img className="w-60 h-60 absolute md:left-[3rem] mb-3rounded-full object-cover bg-no-repeat" src={MyImage} alt="My image" />
+                <div data-aos="fade-left" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg relative flex justify-center items-center rounded-lg'>
+                    <img className="w-full h-full absolute md:left-[3rem] mb-3 object-cover bg-no-repeat md:bg-no-repeat" src={MyImage} alt="My image" />
                 </div>
             </div>
             <div className='p-10 md:mx-40 flex justify-between text-center gap-2'>
