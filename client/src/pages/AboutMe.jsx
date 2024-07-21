@@ -23,12 +23,9 @@ const AboutMe = () => {
                     <span className='text-gray-300'>👋🏼 Hey, I'm</span>
                     <h1 className="mb-2 text-4xl font-bold tracking-tight text-gray-200">Yuval Leberstein</h1>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, tempore?
-                        Dolores laudantium odio officia deserunt harum earum deleniti. Eum illo natus
-                        enim neque culpa temporibus sequi vel recusandae at repudiandae. Lorem ipsum,
-                        dolor sit amet consectetur adipisicing elit. Maiores dolores culpa impedit vitae
-                        alias magni deserunt quis est tenetur doloremque? Vitae numquam facilis alias,
-                        quibusdam sapiente reprehenderit nemo recusandae harum.
+                        Has the ability to work under pressure while meeting deadlines, the ability to work in a team alongside independent work, the ability
+                        to process a lot of information, arranged, quick learning abilities, mental flexibility, creative and responsible thinking.
+                        has the ability to face challenges, determined, diligent, consistent and self disciplined.
                     </p>
                 </div>
                 <div data-aos="fade-left" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg relative flex justify-center items-center rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700'>
@@ -36,18 +33,21 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className='p-10 md:mx-40 flex justify-between text-center gap-2'>
-                <button className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
+                <a href='https://www.linkedin.com/in/yuval-leberstein/' target="_blank"
+                    rel="noopener noreferrer" className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
                     <i className="fa-brands fa-linkedin m-2"></i>
                     Linkedin
-                </button>
-                <button className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
+                </a>
+                <a href='https://github.com/yuvalleberstein21' target="_blank"
+                    rel="noopener noreferrer" className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
                     <i className="fa-brands fa-github m-2"></i>
                     GitHub
-                </button>
-                <button className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
+                </a>
+                <a href='https://www.instagram.com/yuval.leberstein/' target="_blank"
+                    rel="noopener noreferrer" className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
                     <i className="fa-brands fa-instagram m-2"></i>
                     Instegram
-                </button>
+                </a>
             </div>
         </>
 

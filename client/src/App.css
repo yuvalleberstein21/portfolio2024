@@ -11,6 +11,7 @@ body {
   width: 100vw;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 .section_banner {
   height: 100vh;
@@ -106,7 +107,7 @@ body {
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: #18181b;
+  background-color: #1e293b;
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -126,7 +127,7 @@ body {
 
 .button:hover:after {
   top: -45%;
-  background-color: #18181b;
+  background-color: #1e293b;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 

@@ -9,16 +9,16 @@ import 'aos/dist/aos.css';
 
 const projectData = [
     {
-        name: 'Simless.App', stacks: ['HTML', 'CSS', 'BOOTSTRAP', 'JS'], description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: SimlessImage, icon: <FiGithub />
+        name: 'Simless.App', stacks: ['HTML', 'CSS', 'BOOTSTRAP', 'JS'], description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', livePreview: 'https://il.simless.app/En.html', image: SimlessImage, icon: <FiGithub />
     },
     {
-        name: 'EasyMark', stacks: ['ReactJS', 'Redux', 'Tailwind', 'NodeJS', 'Express', 'MongoDB'], description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: EasyMark
+        name: 'EasyMark', stacks: ['ReactJS', 'Redux', 'Tailwind', 'NodeJS', 'Express', 'MongoDB'], github: 'https://github.com/yuvalleberstein21/appointmentspro', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: EasyMark
     },
     {
-        name: 'Vacation Management', stacks: ['ReactJS', 'NodeJS', 'Express', 'BOOTSTRAP', 'MySQL'], description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: Vacations
+        name: 'Vacation Management', stacks: ['ReactJS', 'NodeJS', 'Express', 'BOOTSTRAP', 'MySQL'], github: 'https://github.com/yuvalleberstein21/My-Projects/tree/main/vacationsProject', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: Vacations
     },
     {
-        name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: Portfolio
+        name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consequatur', image: Portfolio
     }
 ]
 
@@ -51,14 +51,23 @@ const ProjectsCards = () => {
                         </div>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mt-3">{project.description}</p>
                         <div className='text-center flex justify-between gap-1 mt-5'>
-                            <button className='p-2 border border-gray-200 text-md rounded-full text-gray-200 w-full hover:bg-gray-700'>
-                                <i className="fa-brands fa-github m-1"></i>
-                                GitHub Repository
-                            </button>
-                            <button className='p-2 border border-gray-200 text-md rounded-full text-gray-200 w-full hover:bg-gray-700'>
-                                Live preview
-                                <i className="fa-solid fa-arrow-right m-1"></i>
-                            </button>
+                            {project.github && (
+                                <a href={project.github} target="_blank"
+                                    rel="noopener noreferrer" className='p-2 border border-gray-200 text-md rounded-full text-gray-200 w-full hover:bg-gray-700'>
+                                    <i className="fa-brands fa-github m-1"></i>
+                                    GitHub Repository
+                                </a>
+                            )}
+                            {
+                                project.livePreview && (
+                                    <a href={project.livePreview} target="_blank"
+                                        rel="noopener noreferrer" className='p-2 border border-gray-200 text-md rounded-full text-gray-200 w-full hover:bg-gray-700'>
+                                        Live preview
+                                        <i className="fa-solid fa-arrow-right m-1"></i>
+                                    </a>
+                                )
+                            }
+
                         </div>
                     </div>
                 </div>

@@ -16,16 +16,16 @@ const AppRoutes = () => {
                 </header>
                 <BannerPage />
             </section>
-            <section className='stacks_page'>
+            <section className='stacks_page' id='stacks'>
                 <Stacks />
             </section>
-            <section className='projects_page'>
+            <section className='projects_page' id='projects'>
                 <Projects />
             </section>
-            <section className='about_me_page'>
+            <section className='about_me_page' id='about'>
                 <AboutMe />
             </section>
-            <section className='contact_me_page'>
+            <section className='contact_me_page' id='contact'>
                 <ContactMe />
             </section>
             <footer className='footer'>
