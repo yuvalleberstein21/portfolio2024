@@ -22,14 +22,14 @@ const ContactMe = () => {
         e.preventDefault();
 
         emailjs.send(
-            'service_c62vvgr',
-            'template_bazk168',
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
             {
                 from_name: formData.name,
                 from_email: formData.email,
                 message: formData.message
             },
-            'mZC7eY3MM4b7TE9NX'
+            process.env.REACT_APP_EMAILJS_USER_ID
         ).then((result) => {
             console.log(result.text);
             alert('Message sent successfully!');
