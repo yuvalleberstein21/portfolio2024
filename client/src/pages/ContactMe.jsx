@@ -75,7 +75,7 @@ const ContactMe = () => {
                     <i className="fa-regular fa-envelope fa-lg m-2 text-sky-500"></i>
                     E-mail
                 </a>
-                <a href="https://wa.me/0509525201" target="_blank" rel="noopener noreferrer" className='p-3 border border-gray-300 text-gray-200 rounded-lg hover:bg-gray-800 hover:border-gray-300'>
+                <a href="https://wa.me/972509525201" target="_blank" rel="noopener noreferrer" className='p-3 border border-gray-300 text-gray-200 rounded-lg hover:bg-gray-800 hover:border-gray-300'>
                     <i className="fa-brands fa-whatsapp fa-lg m-2 text-green-500"></i>
                     WhatsApp
                 </a>
