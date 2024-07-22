@@ -35,17 +35,17 @@ const AboutMe = () => {
             <div className='p-10 md:mx-40 flex justify-between text-center gap-2'>
                 <a href='https://www.linkedin.com/in/yuval-leberstein/' target="_blank"
                     rel="noopener noreferrer" className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
-                    <i className="fa-brands fa-linkedin m-2"></i>
+                    <i className="fa-brands fa-linkedin fa-lg m-2"></i>
                     Linkedin
                 </a>
                 <a href='https://github.com/yuvalleberstein21' target="_blank"
                     rel="noopener noreferrer" className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
-                    <i className="fa-brands fa-github m-2"></i>
+                    <i className="fa-brands fa-github fa-lg m-2"></i>
                     GitHub
                 </a>
                 <a href='https://www.instagram.com/yuval.leberstein/' target="_blank"
                     rel="noopener noreferrer" className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
-                    <i className="fa-brands fa-instagram m-2"></i>
+                    <i className="fa-brands fa-instagram fa-lg m-2"></i>
                     Instegram
                 </a>
             </div>

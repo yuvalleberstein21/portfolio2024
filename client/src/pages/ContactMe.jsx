@@ -119,7 +119,7 @@ const ContactMe = () => {
             {isButtonVisible && (
                 <button
                     onClick={scrollToTop}
-                    className='fixed bottom-5 left-5 p-3 bg-gray-800 text-gray-200 rounded-full shadow-lg hover:bg-gray-700'
+                    className='fixed bottom-5 left-5 p-3 bg-gray-300 text-gray-800 rounded-full shadow-lg hover:bg-gray-800 hover:text-gray-300'
                     aria-label="Scroll to Top"
                 >
                     <i className="fa-solid fa-arrow-up"></i>
