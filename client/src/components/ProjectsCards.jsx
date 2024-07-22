@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import SimlessImage from '../assets/simless-5fde9192.webp';
 import EasyMark from '../assets/Macbook-Air-localhost.webp';
 import Vacations from '../assets/vacations1-214e0e07.webp';
+import myBooks from '../assets/myBooks.app.webp';
 import Portfolio from '../assets/portfolio.webp';
+import Calculator from '../assets/calculator.webp';
 import { FiGithub } from "react-icons/fi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -18,7 +20,12 @@ const projectData = [
         name: 'Vacation Management', stacks: ['ReactJS', 'NodeJS', 'Express', 'BOOTSTRAP', 'MySQL'], github: 'https://github.com/yuvalleberstein21/My-Projects/tree/main/vacationsProject', image: Vacations
     },
     {
-        name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', livePreview: 'daf', image: Portfolio
+        name: 'My Books', stacks: ['ReactJS', 'NodeJS', 'Express', 'Redux', 'BOOTSTRAP', 'MongoDB'], livePreview: 'https://mybooks-front.vercel.app/', github: 'https://github.com/yuvalleberstein21/mybooks', image: myBooks
+    }, {
+        name: 'Calculator', stacks: ['ReactJS', 'CSS'], github: 'https://github.com/yuvalleberstein21/calculator-react/tree/main/Desktop/calculator-react', image: Calculator
+    },
+    {
+        name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', livePreview: '', image: Portfolio
     }
 ]
 
