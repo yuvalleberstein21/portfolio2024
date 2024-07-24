@@ -48,7 +48,7 @@ const ProjectsCards = () => {
                     key={index}
                     data-aos="zoom-in"
                     data-aos-once="true"
-                    className="flex flex-col mt-2 items-center border border-gray-200 rounded-lg shadow md:flex-row md:max-w-5xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b] p-5 md:p-10"
+                    className="flex flex-col mt-2 items-center border rounded-lg shadow md:flex-row md:max-w-5xl border-gray-700 bg-gray-800 hover:bg-[#1e293b] p-5 md:p-10"
                 >
                     <div className="w-full md:w-1/2 flex justify-center">
                         <img
@@ -58,7 +58,7 @@ const ProjectsCards = () => {
                         />
                     </div>
                     <div className="flex flex-col text-center justify-between p-1 md:p-2 mx-auto w-full leading-normal h-full">
-                        <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-white">
                             {project.name}
                         </h5>
                         <div className="flex flex-wrap gap-1 text-center mt-3 justify-center">

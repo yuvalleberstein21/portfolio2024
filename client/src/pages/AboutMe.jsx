@@ -19,10 +19,10 @@ const AboutMe = () => {
     return (
         <>
             <div className='p-10 md:mx-40 md:justify-between md:flex flex-row gap-3'>
-                <div data-aos="fade-right" data-aos-once="true" className="md:w-2/3 p-10 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+                <div data-aos="fade-right" data-aos-once="true" className="md:w-2/3 p-10 border border-gray-700 rounded-lg shadow-lg bg-gray-800">
                     <span className='text-gray-300'>👋🏼 Hey, I'm</span>
                     <h1 className="mb-2 text-4xl font-bold tracking-tight text-gray-200">Yuval Leberstein</h1>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <p className="mb-3 font-normal text-gray-300">
                         Has the ability to work under pressure while meeting deadlines, the ability to work in a team alongside independent work, the ability
                         to process a lot of information, arranged, quick learning abilities, mental flexibility, creative and responsible thinking.
                         has the ability to face challenges, determined, diligent, consistent and self disciplined.
