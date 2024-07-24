@@ -48,7 +48,7 @@ const ProjectsCards = () => {
                     key={index}
                     data-aos="zoom-in"
                     data-aos-once="true"
-                    className="flex flex-col mt-2 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-5xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b] p-5 md:p-10"
+                    className="flex flex-col mt-2 items-center border border-gray-200 rounded-lg shadow md:flex-row md:max-w-5xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-[#1e293b] p-5 md:p-10"
                 >
                     <div className="w-full md:w-1/2 flex justify-center">
                         <img
