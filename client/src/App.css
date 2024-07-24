@@ -62,7 +62,6 @@ img {
 .button {
   display: inline-block;
   padding: 12px 24px;
-  border: 1px solid gray;
   border-radius: 4px;
   transition: all 0.2s ease-in;
   position: relative;
@@ -105,7 +104,6 @@ img {
 
 .button:hover {
   color: #ffffff;
-  border: 1px solid rgb(224, 224, 224);
 }
 
 .button:hover:before {

@@ -9,12 +9,13 @@ const AboutMe = () => {
 
     useEffect(() => {
         AOS.init({
-            offset: 200,
+            offset: 100,
             duration: 600,
             easing: 'ease-in-sine',
             delay: 100,
-
+            once: true
         });
+        AOS.refresh();
     }, [])
     return (
         <>
@@ -28,7 +29,8 @@ const AboutMe = () => {
                         has the ability to face challenges, determined, diligent, consistent and self disciplined.
                     </p>
                 </div>
-                <div data-aos="fade-left" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg relative flex justify-center items-center rounded-lg'>
+                <div data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg  flex justify-center items-center rounded-lg'>
                     <img className="w-full h-full absolute md:left-[3rem] mb-3 object-cover bg-no-repeat md:bg-no-repeat" src={MyImage} alt="My image" />
                 </div>
             </div>
@@ -50,7 +52,6 @@ const AboutMe = () => {
                 </a>
             </div>
         </>
-
     )
 }
 
