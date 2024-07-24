@@ -18,10 +18,12 @@ img {
   object-fit: cover !important;
 }
 .section_banner {
-  background: url('./assets/20251948_6227820.webp') !important;
+  background: url('./assets/20251948_6227820.webp');
   background-size: cover;
   background-position: center;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 .stacks_page {
   height: 350px;
