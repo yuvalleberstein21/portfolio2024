@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const SectionBanner = () => {
     return (
         <div className="w-full text-center">
@@ -13,9 +14,9 @@ const SectionBanner = () => {
                 Full Stack Developer with a passion for building dynamic and responsive <br /> web applications.
                 I love creating user-friendly and efficient solutions. <br /> Let's collaborate and bring your ideas to life!
             </p>
-            <button className="button px-3 py-2 text-lg bg-amber-600 rounded-full text-gray-100 mt-10">
+            <a href="#contact" className="button px-3 py-2 text-lg bg-amber-600 rounded-full text-gray-100 mt-10">
                 Get in touch
-            </button>
+            </a>
         </div>
     )
 }

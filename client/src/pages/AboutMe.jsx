@@ -20,17 +20,15 @@ const AboutMe = () => {
     return (
         <>
             <div className='p-10 md:mx-40 md:justify-between md:flex flex-row gap-3'>
-                <div data-aos="fade-right" data-aos-once="true" className="md:w-2/3 p-10 border border-gray-700 rounded-lg shadow-lg bg-gray-800">
+                <div data-aos="fade-right" data-aos-once="true" className="md:w-2/3 p-5 border border-gray-700 rounded-lg shadow-lg bg-gray-800">
                     <span className='text-gray-300'>👋🏼 Hey, I'm</span>
                     <h1 className="mb-2 text-4xl font-bold tracking-tight text-gray-200">Yuval Leberstein</h1>
-                    <p className="mb-3 font-normal text-gray-300">
-                        Has the ability to work under pressure while meeting deadlines, the ability to work in a team alongside independent work, the ability
-                        to process a lot of information, arranged, quick learning abilities, mental flexibility, creative and responsible thinking.
-                        has the ability to face challenges, determined, diligent, consistent and self disciplined.
+                    <p className="mb-3 font-normal text-gray-300 w-full">
+                        Able to work under pressure and meet deadlines, both independently and as part of a team. Quick learner with mental flexibility, creativity, and responsibility. Determined, diligent, consistent, and self-disciplined.
                     </p>
                 </div>
                 <div data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg  flex justify-center items-center rounded-lg'>
+                    data-aos-anchor-placement="center-bottom" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg flex justify-center items-center rounded-lg'>
                     <img className="w-full h-full absolute md:left-[3rem] mb-3 object-cover bg-no-repeat md:bg-no-repeat" src={MyImage} alt="My image" />
                 </div>
             </div>

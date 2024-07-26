@@ -20,11 +20,6 @@ const projectData = [
         name: 'Vacation Management', stacks: ['ReactJS', 'NodeJS', 'Express', 'BOOTSTRAP', 'MySQL'], github: 'https://github.com/yuvalleberstein21/My-Projects/tree/main/vacationsProject', image: Vacations
     },
     {
-        name: 'My Books', stacks: ['ReactJS', 'NodeJS', 'Express', 'Redux', 'BOOTSTRAP', 'MongoDB'], livePreview: 'https://mybooks-front.vercel.app/', github: 'https://github.com/yuvalleberstein21/mybooks', image: myBooks
-    }, {
-        name: 'Calculator', stacks: ['ReactJS', 'CSS'], github: 'https://github.com/yuvalleberstein21/calculator-react/tree/main/Desktop/calculator-react', image: Calculator
-    },
-    {
         name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', livePreview: '', image: Portfolio
     }
 ]
