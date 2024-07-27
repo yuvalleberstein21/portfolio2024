@@ -46,7 +46,7 @@ const AboutMe = () => {
                 <a href='https://www.instagram.com/yuval.leberstein/' target="_blank"
                     rel="noopener noreferrer" className='p-2 text-gray-200 text-md border border-gray-200 rounded-lg w-full text-center hover:bg-gray-700'>
                     <i className="fa-brands fa-instagram fa-lg m-2"></i>
-                    Instegram
+                    Instagram
                 </a>
             </div>
         </>
