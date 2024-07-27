@@ -17,6 +17,21 @@ img {
   background-repeat: no-repeat !important;
   object-fit: cover !important;
 }
+.bg-fade-in {
+  background: url('./assets/20251948_6227820.webp') no-repeat center center;
+  background-size: cover;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .section_banner {
   background-size: cover;
   background-position: center;
