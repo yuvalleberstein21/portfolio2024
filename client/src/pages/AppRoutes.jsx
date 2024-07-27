@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 const AppRoutes = () => {
     return (
         <>
-            <section className='section_banner'>
+            <section className={`section_banner bg-[url('./assets/20251948_6227820.webp')]`}>
                 <header>
                     <Header />
                 </header>
