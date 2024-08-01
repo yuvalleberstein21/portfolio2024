@@ -28,8 +28,8 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom" data-aos-once="true" className='md:w-1/3 p-10 mt-4 md:mt-0 aboutMe-bg flex justify-center items-center rounded-lg'>
-                    <img className="w-full h-full absolute md:left-[3rem] mb-3 object-cover bg-no-repeat md:bg-no-repeat" src={MyImage} alt="My image" />
+                    data-aos-anchor-placement="center-bottom" data-aos-once="true" className='md:w-1/3 md:mt-0 aboutMe-bg flex justify-center items-center rounded-lg'>
+                    <img className="md:h-[350px] md:w-[350px] h-full w-full object-cover bg-no-repeat md:bg-no-repeat" src={MyImage} alt="My image" />
                 </div>
             </div>
             <div className='p-10 md:mx-40 flex justify-between text-center gap-2'>
