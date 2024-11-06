@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import SimlessImage from '../assets/simless-5fde9192.webp';
 import EasyMark from '../assets/Macbook-Air-localhost.webp';
 import Vacations from '../assets/vacations1-214e0e07.webp';
-import myBooks from '../assets/myBooks.app.webp';
 import Portfolio from '../assets/portfolio.webp';
-import Calculator from '../assets/calculator.webp';
+import myMeal from '../assets/mymeal.webp';
 import { FiGithub } from "react-icons/fi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,13 +16,15 @@ const projectData = [
         name: 'EasyMark', stacks: ['ReactJS', 'Redux', 'Tailwind', 'NodeJS', 'Express', 'MongoDB'], github: 'https://github.com/yuvalleberstein21/appointmentspro', image: EasyMark
     },
     {
+        name: 'My Meal.App', stacks: ['ReactJS', 'Tailwind', 'NodeJS', 'Express', 'MongoDB'], livePreview: 'https://www.mymeal.co.il', image: myMeal
+    },
+    {
         name: 'Vacation Management', stacks: ['ReactJS', 'NodeJS', 'Express', 'BOOTSTRAP', 'MySQL'], github: 'https://github.com/yuvalleberstein21/My-Projects/tree/main/vacationsProject', image: Vacations
     },
     {
         name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', livePreview: '', image: Portfolio
     }
 ]
-
 
 
 const ProjectsCards = () => {

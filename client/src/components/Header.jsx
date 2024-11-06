@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 
@@ -11,7 +11,7 @@ const Header = () => {
     }
 
     return (
-        <nav className="sticky w-full z-20 top-0 start-0 py-5">
+        <nav className="sticky w-full z-20 top-0 start-0 py-5 ">
             <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:border-2 border-neutral-800 bg-[#18181bd1] bg-none ${menuOpen ? 'md:rounded-full' : 'rounded-full'}`}>
                 <Link to={'/'} className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-3xl font-semibold whitespace-nowrap text-white">Portfolio <span className='text-3xl text-amber-600'>.</span></span>

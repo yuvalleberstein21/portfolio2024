@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import MyImage from '../assets/myImage-609876fe.webp'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
