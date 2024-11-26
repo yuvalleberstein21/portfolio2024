@@ -4,6 +4,7 @@ import EasyMark from '../assets/Macbook-Air-localhost.webp';
 import Vacations from '../assets/vacations1-214e0e07.webp';
 import Portfolio from '../assets/portfolio.webp';
 import myMeal from '../assets/mymeal.webp';
+import PerehUnit from '../assets/pereh-unit.png';
 import { FiGithub } from "react-icons/fi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,8 +23,12 @@ const projectData = [
         name: 'Vacation Management', stacks: ['ReactJS', 'NodeJS', 'Express', 'BOOTSTRAP', 'MySQL'], github: 'https://github.com/yuvalleberstein21/My-Projects/tree/main/vacationsProject', image: Vacations
     },
     {
+        name: 'Pereh Unit', stacks: ['ReactJS', 'Tailwind'], livePreview: 'https://www.pereh.org.il', image: PerehUnit
+    },
+    {
         name: 'Portfolio', stacks: ['ReactJS', 'Tailwind'], github: 'https://github.com/yuvalleberstein21/portfolio2024', livePreview: '', image: Portfolio
-    }
+    },
+
 ]
 
 

@@ -2,7 +2,6 @@ import SectionBanner from '../components/SectionBanner'
 
 
 const BannerPage = () => {
-
     return (
 
         <div className="flex flex-col md:flex-row w-full justify-center items-center md:h-[100vh]">
