@@ -1,6 +1,4 @@
-import React from 'react'
-import Header from '../components/Header'
-import ResumeCV from '../assets/ResumeCV.jpeg'
+import ResumeCV from '../assets/ResumeCV.png'
 import { Link } from 'react-router-dom'
 
 const Resume = () => {
