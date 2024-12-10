@@ -15,8 +15,6 @@ const Resume = () => {
                 <img src={ResumeCV} alt="Resume" className='object-cover max-h-[600px] w-full mx-auto' />
             </div>
         </div>
-
-
     )
 }
 
