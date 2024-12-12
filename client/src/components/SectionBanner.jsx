@@ -2,7 +2,7 @@
 
 const SectionBanner = () => {
     return (
-        <div className="w-full flex items-center justify-center overflow-hidden">
+        <div className="w-full flex items-center justify-center">
             {/* Subtle background pattern */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black opacity-90 pointer-events-none"></div>
 

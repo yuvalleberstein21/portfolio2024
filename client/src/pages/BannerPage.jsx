@@ -3,8 +3,8 @@ import SectionBanner from '../components/SectionBanner'
 
 const BannerPage = () => {
     return (
-        <div className="flex flex-col md:flex-row w-full justify-center items-center md:h-[100vh]">
-            <div className="md:mb-20 min-h-[550px] ">
+        <div className="flex flex-col md:flex-row w-full justify-center items-center">
+            <div className='mt-0 lg:mt-10'>
                 <SectionBanner />
             </div>
         </div>

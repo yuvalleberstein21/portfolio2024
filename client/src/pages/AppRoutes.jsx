@@ -10,10 +10,17 @@ import Footer from '../components/Footer'
 const AppRoutes = () => {
     return (
         <>
-            <section className="section_banner bg-fade-in">
-                <header>
-                    <Header />
-                </header>
+            <header>
+                <Header />
+            </header>
+            <section className="section_banner bg-fade-in relative h-screen flex items-center justify-center"
+                style={{
+                    backgroundImage: "url('/path-to-your-image.jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
+            >
                 <BannerPage />
             </section>
             <section className='stacks_page' id='stacks'>
