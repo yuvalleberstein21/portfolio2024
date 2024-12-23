@@ -1,45 +1,125 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
 
 
 const Header = () => {
-    const [menuOpen, setOpenMenu] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const windowHeight = window.innerHeight;
+    //         const documentHeight = document.documentElement.scrollHeight;
+    //         const scrollTop = window.scrollY;
+
+    //         // Show background when scrolling down, but hide it when near the bottom
+    //         const isNearBottom = documentHeight - (scrollTop + windowHeight) < 20;
+    //         const isScrolledDown = scrollTop > 20;
+
+    //         setScrolled(isScrolledDown && !isNearBottom);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, []);
 
     const handleOpenMenu = () => {
-        setOpenMenu(!menuOpen);
-    }
+        setMenuOpen(!menuOpen);
+    };
 
     return (
-        <nav className="fixed bg-[#1e293b] left-0 min-w-full z-20 top-0 start-0 py-2 shadow-lg">
-            <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:border-2 border-neutral-800 bg-[#18181bd1] bg-none ${menuOpen ? 'md:rounded-full' : 'rounded-full'}`}>
-                <Link to={'/'} className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span className="self-center text-3xl font-semibold whitespace-nowrap text-white">Portfolio <span className='text-3xl text-amber-600'>.</span></span>
-                </Link>
-                <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <a href='#contact' type="button" className="text-white bg-amber-600 focus:ring-4 focus:outline-none font-medium rounded-full text-md px-4 py-2 text-center">Hire me!</a>
-                    <button onClick={handleOpenMenu} data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-300 rounded-lg md:hidden focus:outline-none" aria-controls="navbar-sticky" aria-expanded={menuOpen}>
-                        <span className="sr-only">Open main menu</span>
-                        <i className={`fa-solid fa-${menuOpen ? 'times' : 'bars'} fa-xl`}></i>
+        <nav className="fixed w-full z-50 top-0 transition-all duration-300 bg-gradient-to-br from-gray-900 via-gray-800 to-black shadow-lg">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between h-16">
+                    {/* Logo */}
+                    <Link
+                        to="/"
+                        className="flex items-center space-x-2 text-white hover:text-white/80 transition-colors"
+                    >
+                        <span className="text-2xl font-bold tracking-tight">
+                            PORTFOLIO
+                            <span className="text-blue-500 animate-pulse">.</span>
+                        </span>
+                    </Link>
+
+                    {/* Desktop Navigation */}
+                    <div className="hidden md:flex md:items-center md:space-x-8">
+                        <div className="flex space-x-6">
+                            {['About', 'Projects', 'Skills'].map((item) => (
+                                <a
+                                    key={item}
+                                    href={`#${item.toLowerCase()}`}
+                                    className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors relative group"
+                                >
+                                    {item}
+                                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                                </a>
+                            ))}
+                            <Link
+                                to="/resume"
+                                className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors relative group"
+                            >
+                                Resume
+                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                            </Link>
+                        </div>
+
+                        <a
+                            href="#contact"
+                            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 transform hover:scale-105"
+                        >
+                            Hire me!
+                        </a>
+                    </div>
+
+                    {/* Mobile menu button */}
+                    <button
+                        onClick={handleOpenMenu}
+                        className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700/50 transition-colors"
+                    >
+                        {menuOpen ? (
+                            <X className="h-6 w-6" />
+                        ) : (
+                            <Menu className="h-6 w-6" />
+                        )}
                     </button>
                 </div>
-                <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${menuOpen ? 'block' : 'hidden'}`} id="navbar-sticky">
-                    <ul className="flex flex-col p-4 md:p-0 mt-4 border rounded-lg font-normal text-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-                        <li className='list-item'>
-                            <a href="#about" className="block py-2 px-3 rounded md:hover:bg-transparent md:p-0 text-white ">About</a>
-                        </li>
-                        <li className='list-item'>
-                            <a href="#projects" className="block py-2 px-3 rounded md:hover:bg-transparent md:p-0 text-white">Projects</a>
-                        </li>
-                        <li className='list-item'>
-                            <a href="#stacks" className="block py-2 px-3 rounded md:hover:bg-transparent md:p-0 text-white">Skills</a>
-                        </li>
-                        <li className='list-item'>
-                            <Link to={'/resume'} className="block py-2 px-3 rounded md:hover:bg-transparent md:p-0 text-white">Resume</Link>
-                        </li>
-                    </ul>
-                </div>
             </div>
+
+            {/* Mobile menu */}
+            {menuOpen && (
+                <div className="md:hidden">
+                    <div className="px-2 pt-2 pb-3 space-y-1">
+                        {['About', 'Projects', 'Skills'].map((item) => (
+                            <a
+                                key={item}
+                                href={`#${item.toLowerCase()}`}
+                                className="text-gray-300 hover:text-white hover:bg-gray-700/50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                {item}
+                            </a>
+                        ))}
+                        <Link
+                            to="/resume"
+                            className="text-gray-300 hover:text-white hover:bg-gray-700/50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            Resume
+                        </Link>
+                        <a
+                            href="#contact"
+                            className="bg-blue-500 hover:bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium transition-colors text-center mt-4"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            Hire me!
+                        </a>
+                    </div>
+                </div>
+            )}
         </nav>
 
     )

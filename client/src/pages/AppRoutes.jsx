@@ -13,17 +13,10 @@ const AppRoutes = () => {
             <header>
                 <Header />
             </header>
-            <section className="section_banner bg-fade-in relative h-screen flex items-center justify-center"
-                style={{
-                    backgroundImage: "url('/path-to-your-image.jpg')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                }}
-            >
+            <section className='min-h-screen'>
                 <BannerPage />
             </section>
-            <section className='stacks_page' id='stacks'>
+            <section className='stacks_page' id='skills'>
                 <Stacks />
             </section>
             <section className='projects_page' id='projects'>

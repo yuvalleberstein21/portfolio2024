@@ -22,13 +22,13 @@ img {
   background-size: cover !important;
 }
 
-.section_banner {
+/* .section_banner {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-}
+} */
 .stacks_page {
   background-color: #1e293b;
 }
