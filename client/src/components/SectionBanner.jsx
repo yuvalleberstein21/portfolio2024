@@ -69,26 +69,26 @@ const SectionBanner = () => {
 
                 {/* CTA Buttons */}
                 <div
-                    className="flex flex-col sm:flex-row justify-center gap-6 mb-16"
+                    className="flex flex-col sm:flex-row justify-center gap-4 mb-16"
                     data-aos="fade-up"
                 >
                     <a
                         href="#contact"
                         className="group relative px-8 py-4 rounded-lg bg-blue-600 text-white font-semibold text-lg
-                hover:bg-blue-700 transform hover:scale-105 transition-all duration-300
-                shadow-[0_0_0_3px_rgba(59,130,246,0.1)] hover:shadow-[0_0_0_3px_rgba(59,130,246,0.3)]"
+                          hover:bg-blue-700 transform hover:scale-105 transition-all duration-300
+                         shadow-[0_0_0_3px_rgba(59,130,246,0.1)] hover:shadow-[0_0_0_3px_rgba(59,130,246,0.3)]"
                     >
-                        Let's Collaborate
+                        View My Work
                         <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-400/0 via-blue-400/30 to-blue-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer"></span>
                     </a>
                     <a
                         href="#projects"
                         className="px-8 py-4 rounded-lg border-2 border-gray-700 text-gray-300
-                hover:border-blue-500 hover:text-blue-400 font-semibold text-lg
-                backdrop-blur-sm bg-gray-900/50 hover:bg-gray-900/70
-                transform hover:scale-105 transition-all duration-300"
+                         hover:border-blue-500 hover:text-blue-400 font-semibold text-lg
+                         backdrop-blur-sm bg-gray-900/50 hover:bg-gray-900/70
+                         transform hover:scale-105 transition-all duration-300"
                     >
-                        Explore Projects
+                        Get In Touch
                     </a>
                 </div>
 

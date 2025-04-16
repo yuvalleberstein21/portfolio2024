@@ -5,8 +5,8 @@ const Projects = () => {
         <div className='p-5 mx-auto'>
             <div className='text-center'>
                 <div className="mb-8 space-y-2">
-                    <h3 className="text-sm font-semibold tracking-wide text-blue-400 uppercase">
-                        PROJECTS
+                    <h3 className="text-md font-semibold tracking-wide text-blue-400 uppercase">
+                        My PROJECTS
                     </h3>
                     <h2 className="text-3xl font-bold text-gray-200">
                         My Recent Work

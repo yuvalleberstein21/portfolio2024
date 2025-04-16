@@ -74,8 +74,8 @@ const StackCards = () => {
         <div className="p-10 mx-auto text-center" data-aos="fade-up">
             {/* Header */}
             <div className="mb-8 space-y-2">
-                <h3 className="text-sm font-semibold tracking-wide text-blue-400 uppercase">
-                    STACKS
+                <h3 className="text-md font-semibold tracking-wide text-blue-400 uppercase">
+                    My Skills
                 </h3>
                 <h2 className="text-3xl font-bold text-gray-200">
                     Technologies I Work With
@@ -92,7 +92,7 @@ const StackCards = () => {
                             className="p-4 transform hover:scale-105 transition-transform duration-300"
                         >
                             <div className="bg-gray-800 border border-gray-700 rounded-lg shadow-md p-5">
-                                <div className="text-blue-400 mb-4 flex justify-center">
+                                <div className="text-orange-200 mb-4 flex justify-center">
                                     {tech.icon}
                                 </div>
                                 <h3 className="text-lg font-medium text-gray-200">

@@ -22,7 +22,12 @@ const AboutMe = () => {
                     <span className='text-gray-300'>👋🏼 Hey, I'm</span>
                     <h1 className="mb-2 text-4xl font-bold tracking-tight text-gray-200">Yuval Leberstein</h1>
                     <p className="mb-3 font-normal text-gray-300 w-full">
-                        Able to work under pressure and meet deadlines, both independently and as part of a team. Quick learner with mental flexibility, creativity, and responsibility. Determined, diligent, consistent, and self-disciplined.
+                        With a background in both frontend and backend development, I've honed my skills across the entire web development stack. I'm passionate about creating applications that are not only visually appealing but also performant and accessible.
+                        <br />
+                        <p className='py-3'>
+                            I enjoy solving complex problems with clean, maintainable code and continuously learning new technologies to stay at the forefront of web development.
+                        </p>
+
                     </p>
                 </div>
                 <div data-aos="fade-up"
