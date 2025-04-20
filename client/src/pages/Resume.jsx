@@ -1,5 +1,5 @@
-import ResumeCV from '../assets/resumeCV.png'
-import { Link } from 'react-router-dom'
+import ResumeCV from '../assets/resumeCV.png';
+import { Link } from 'react-router-dom';
 
 const Resume = () => {
     return (
