@@ -1,108 +1,54 @@
-import { ChevronDown } from 'lucide-react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-
+import myImage from '../assets/myImage.webp'
 
 const SectionBanner = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1200,
-            once: true,
-        });
-    }, []);
     return (
-        <div className="min-h-screen relative w-full flex items-center justify-center overflow-hidden mt-8">
-            <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-grid-8"></div>
-            </div>
-
-            <div className="absolute inset-0 overflow-hidden">
-                <div
-                    className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"
-                    data-aos="fade-in"
-                ></div>
-                <div
-                    className="absolute -bottom-40 -right-40 w-80 h-80 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"
-                    data-aos="zoom-in"
-                ></div>
-                <div
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"
-                    data-aos="zoom-in"
-                ></div>
-            </div>
-
+        <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 px-6 mt-5 py-16 overflow-hidden">
+            {/* תמונה בצד שמאל במסכים גדולים */}
             <div
-                className="relative z-10 max-w-5xl mx-auto px-6 py-16 text-center"
-                data-aos="fade-up"
+                className="w-full lg:w-1/2 flex justify-center mb-12 lg:mb-0"
+                data-aos="zoom-in"
             >
-                {/* Professional Title */}
-                <div
-                    className="mb-8 transform hover:scale-105 transition-transform duration-300"
-                    data-aos="flip-down"
-                >
-                    <span className="inline-block text-sm font-semibold tracking-wider bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text px-4 py-1.5 rounded-full uppercase border border-blue-500/20">
-                        Full Stack Developer
-                    </span>
+                <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl border-4 border-blue-500">
+                    <img
+                        src={myImage}
+                        alt="Yuval Leberstein"
+                        className="w-full h-full object-cover"
+                    />
+                    {/* עיגול רקע מאחורי התמונה לאפקט מרשים */}
+                    <div className="absolute -inset-2 rounded-full bg-blue-500 blur-2xl opacity-20 animate-pulse z-[-1]"></div>
                 </div>
+            </div>
 
-                {/* Name with Professional Animation */}
-                <h1
-                    className="text-5xl md:text-7xl font-bold mb-8 text-white tracking-tight"
-                    data-aos="zoom-in"
-                >
-                    <span className="inline-block transform hover:scale-105 transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-400 to-blue-600">
-                        Yuval Leberstein
-                    </span>
+            {/* טקסט בצד ימין */}
+            <div
+                className="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start"
+                data-aos="fade-left"
+            >
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    Yuval Leberstein
                 </h1>
-
-                {/* Description */}
-                <p
-                    className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
-                    data-aos="fade-right"
-                >
-                    Crafting exceptional digital experiences through innovative
-                    <span className="text-blue-400"> full-stack solutions</span>.
-                    Transforming ideas into scalable, efficient, and elegant applications.
+                <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl">
+                    Full Stack Developer specializing in crafting fast, modern, and scalable
+                    web applications using <span className="text-blue-400">MERN stack</span>,
+                    with a passion for UI/UX and performance.
                 </p>
-
-                {/* CTA Buttons */}
-                <div
-                    className="flex flex-col sm:flex-row justify-center gap-4 mb-16"
-                    data-aos="fade-up"
-                >
-                    <a
-                        href="#contact"
-                        className="group relative px-8 py-4 rounded-lg bg-blue-600 text-white font-semibold text-lg
-                          hover:bg-blue-700 transform hover:scale-105 transition-all duration-300
-                         shadow-[0_0_0_3px_rgba(59,130,246,0.1)] hover:shadow-[0_0_0_3px_rgba(59,130,246,0.3)]"
-                    >
-                        View My Work
-                        <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-400/0 via-blue-400/30 to-blue-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer"></span>
-                    </a>
+                <div className="flex flex-col sm:flex-row gap-4">
                     <a
                         href="#projects"
-                        className="px-8 py-4 rounded-lg border-2 border-gray-700 text-gray-300
-                         hover:border-blue-500 hover:text-blue-400 font-semibold text-lg
-                         backdrop-blur-sm bg-gray-900/50 hover:bg-gray-900/70
-                         transform hover:scale-105 transition-all duration-300"
+                        className="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold text-lg hover:bg-blue-700 transition-all duration-300 shadow-md"
                     >
-                        Get In Touch
+                        View Projects
                     </a>
-                </div>
-
-                {/* Scroll Indicator */}
-                <div
-                    className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
-                    data-aos="fade-in"
-                >
-                    <a href="#skills">
-                        <ChevronDown className="w-6 h-6 text-gray-400" />
+                    <a
+                        href="#contact"
+                        className="px-6 py-3 rounded-lg border border-gray-500 text-gray-200 hover:text-blue-400 hover:border-blue-500 transition-all duration-300"
+                    >
+                        Contact Me
                     </a>
                 </div>
             </div>
         </div>
     )
 }
+
 export default SectionBanner

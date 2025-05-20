@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
@@ -6,25 +6,7 @@ import { Menu, X } from 'lucide-react';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
 
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const windowHeight = window.innerHeight;
-    //         const documentHeight = document.documentElement.scrollHeight;
-    //         const scrollTop = window.scrollY;
-
-    //         // Show background when scrolling down, but hide it when near the bottom
-    //         const isNearBottom = documentHeight - (scrollTop + windowHeight) < 20;
-    //         const isScrolledDown = scrollTop > 20;
-
-    //         setScrolled(isScrolledDown && !isNearBottom);
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
 
     const handleOpenMenu = () => {
         setMenuOpen(!menuOpen);
