@@ -5,12 +5,9 @@ const Projects = () => {
         <div className='p-5 mx-auto'>
             <div className='text-center'>
                 <div className="mb-8 space-y-2">
-                    <h3 className="text-md font-semibold tracking-wide text-blue-400 uppercase">
-                        My PROJECTS
+                    <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent mb-6">
+                        My Projects
                     </h3>
-                    <h2 className="text-3xl font-bold text-gray-200">
-                        My Recent Work
-                    </h2>
                 </div>
             </div>
             <div className='mt-5 w-full'>

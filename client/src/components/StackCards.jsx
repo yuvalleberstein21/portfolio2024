@@ -74,12 +74,9 @@ const StackCards = () => {
         <div className="p-10 mx-auto text-center" data-aos="fade-up">
             {/* Header */}
             <div className="mb-8 space-y-2">
-                <h3 className="text-md font-semibold tracking-wide text-blue-400 uppercase">
+                <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent mb-6">
                     My Skills
                 </h3>
-                <h2 className="text-3xl font-bold text-gray-200">
-                    Technologies I Work With
-                </h2>
             </div>
 
             {/* Stack Cards Carousel */}
@@ -91,8 +88,8 @@ const StackCards = () => {
                             data-aos="zoom-in"
                             className="p-4 transform hover:scale-105 transition-transform duration-300"
                         >
-                            <div className="bg-gray-800 border border-gray-700 rounded-lg shadow-md p-5">
-                                <div className="text-orange-200 mb-4 flex justify-center">
+                            <div className="bg-slate-700 border border-slate-300 rounded-lg shadow-md p-5">
+                                <div className="text-teal-500 mb-4 flex justify-center">
                                     {tech.icon}
                                 </div>
                                 <h3 className="text-lg font-medium text-gray-200">

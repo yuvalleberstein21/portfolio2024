@@ -80,13 +80,13 @@ const ProjectsCards = () => {
                             <div className="mt-5 flex gap-2 flex-wrap">
                                 {project.github && (
                                     <a href={project.github} target="_blank" rel="noopener noreferrer"
-                                        className="flex-1 text-center bg-gray-700 hover:bg-gray-600 text-sm text-white px-4 py-2 rounded-full transition">
+                                        className="flex-1 text-center bg-teal-500 hover:bg-teal-400text-sm text-white px-4 py-2 rounded-full transition">
                                         <FiGithub className="inline mr-1" /> GitHub
                                     </a>
                                 )}
                                 {project.livePreview && (
                                     <a href={project.livePreview} target="_blank" rel="noopener noreferrer"
-                                        className="flex-1 text-center bg-blue-600 hover:bg-blue-500 text-sm text-white px-4 py-2 rounded-full transition">
+                                        className="flex-1 text-center bg-teal-500 hover:bg-teal-400 text-sm text-white px-4 py-2 rounded-full transition">
                                         🌐 Live
                                     </a>
                                 )}
