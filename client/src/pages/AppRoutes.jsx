@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Header from '../components/Header'
 import BannerPage from './BannerPage'
 import Stacks from './Stacks'

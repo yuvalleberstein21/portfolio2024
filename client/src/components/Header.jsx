@@ -13,54 +13,16 @@ const Header = () => {
     };
 
     return (
-        <nav className="fixed w-full z-50 top-0 transition-all duration-300 bg-gradient-to-br from-gray-900 via-gray-800 to-black shadow-lg">
+        <nav className="fixed w-full z-50 top-0">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
-                    <Link
-                        to="/"
-                        className="flex items-center space-x-2 text-white hover:text-white/80 transition-colors"
-                    >
-                        <span className="text-2xl font-bold tracking-tight">
-                            PORTFOLIO
-                            <span className="text-blue-500 animate-pulse">.</span>
-                        </span>
-                    </Link>
+                    {/* Empty spacer instead of logo */}
+                    <div></div>
 
-                    {/* Desktop Navigation */}
-                    <div className="hidden md:flex md:items-center md:space-x-8">
-                        <div className="flex space-x-6">
-                            {['About', 'Projects', 'Skills'].map((item) => (
-                                <a
-                                    key={item}
-                                    href={`#${item.toLowerCase()}`}
-                                    className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors relative group"
-                                >
-                                    {item}
-                                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                                </a>
-                            ))}
-                            <Link
-                                to="/resume"
-                                className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors relative group"
-                            >
-                                Resume
-                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                            </Link>
-                        </div>
-
-                        <a
-                            href="#contact"
-                            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 transform hover:scale-105"
-                        >
-                            Hire me!
-                        </a>
-                    </div>
-
-                    {/* Mobile menu button */}
+                    {/* Mobile menu button only */}
                     <button
                         onClick={handleOpenMenu}
-                        className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700/50 transition-colors"
+                        className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700/50 transition-colors"
                     >
                         {menuOpen ? (
                             <X className="h-6 w-6" />
@@ -71,39 +33,58 @@ const Header = () => {
                 </div>
             </div>
 
-            {/* Mobile menu */}
-            {menuOpen && (
-                <div className="md:hidden">
-                    <div className="px-2 pt-2 pb-3 space-y-1">
-                        {['About', 'Projects', 'Skills'].map((item) => (
-                            <a
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
-                                className="text-gray-300 hover:text-white hover:bg-gray-700/50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                {item}
-                            </a>
-                        ))}
-                        <Link
-                            to="/resume"
-                            className="text-gray-300 hover:text-white hover:bg-gray-700/50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Resume
-                        </Link>
-                        <a
-                            href="#contact"
-                            className="bg-blue-500 hover:bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium transition-colors text-center mt-4"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Hire me!
-                        </a>
-                    </div>
+            {/* Slide-in mobile menu */}
+            <div
+                className={`fixed top-0 right-0 h-full w-64 z-40 bg-gradient-to-b from-[#0a192f] via-[#020c1b] to-[#0a192f] text-white transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'
+                    }`}
+            >
+                {/* Close button inside sidebar */}
+                <div className="flex justify-end p-4">
+                    <button
+                        onClick={() => setMenuOpen(false)}
+                        className="text-gray-400 hover:text-white transition-colors"
+                    >
+                        <X className="h-6 w-6" />
+                    </button>
                 </div>
+
+                {/* Menu items */}
+                <div className="flex flex-col px-6 pt-4 space-y-6">
+                    {['About', 'Projects', 'Skills'].map((item) => (
+                        <a
+                            key={item}
+                            href={`#${item.toLowerCase()}`}
+                            className="text-white hover:text-teal-500 text-lg font-medium transition-colors"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            {item}
+                        </a>
+                    ))}
+                    <Link
+                        to="/resume"
+                        className="text-white hover:text-teal-500 text-lg font-medium transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Resume
+                    </Link>
+                    <a
+                        href="#contact"
+                        className="bg-teal-500 text-white text-center py-2 rounded-md text-base font-medium transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Hire me!
+                    </a>
+                </div>
+            </div>
+
+            {/* Background overlay when menu is open */}
+            {menuOpen && (
+                <div
+                    className="fixed inset-0 bg-black/50 z-30"
+                    onClick={() => setMenuOpen(false)}
+                />
             )}
         </nav>
-
     )
 }
 
