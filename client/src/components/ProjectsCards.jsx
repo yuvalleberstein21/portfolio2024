@@ -7,6 +7,7 @@ import Vacations from '../assets/vacations1-214e0e07.webp';
 import Portfolio from '../assets/portfolio.webp';
 import myMeal from '../assets/mymeal.webp';
 import PerehUnit from '../assets/pereh-unit.png';
+import babyTracker from '../assets/babyTracker.webp'
 import { FiGithub } from "react-icons/fi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,6 +21,9 @@ const projectData = [
     },
     {
         name: 'My Meal.App', description: 'A web app for a clinical dietitian with user authentication food and category browsing, product filtering ,a calorie calculator on the user page, a personal calorie calculator, weight tracking and an admin dashboard with full CRUD functionality', stacks: ['ReactJS', 'Tailwind', 'NodeJS', 'Express', 'MongoDB'], livePreview: 'https://www.mymeal.co.il', image: myMeal
+    },
+    {
+        name: 'Baby Memory', description: 'A React-based application that helps parents document their baby`s growth with monthly photo uploads, multi-baby support, and automated reminders. Each user can manage multiple babies, view photos by month and manage photos by create ,edit ,delete', stacks: ['ReactJS', 'TypeScript', 'Tailwind', 'Firebase (Authentication, Firestore)', 'Cloudinary'], livePreview: 'https://babymemories-5764d.web.app', image: babyTracker
     },
     {
         name: 'Simless.App', stacks: ['HTML', 'CSS', 'BOOTSTRAP', 'JS'], livePreview: 'https://il.simless.app/En.html', image: SimlessImage
