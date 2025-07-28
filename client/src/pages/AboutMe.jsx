@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { User, Heart, Target, Lightbulb } from 'lucide-react';
 
