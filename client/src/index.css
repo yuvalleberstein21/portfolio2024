@@ -1,3 +1,133 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 26% 6%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 26% 10%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 220 26% 8%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 189 94% 43%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 271 81% 56%;
+    --secondary-foreground: 220 26% 6%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 180 20% 70%;
+
+    --accent: 271 81% 56%;
+    --accent-foreground: 220 26% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 220 26% 6%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 189 94% 43%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific tokens */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(189 94% 43%),
+      hsl(271 81% 56%)
+    );
+    --gradient-glow: linear-gradient(
+      135deg,
+      hsl(189 94% 43% / 0.2),
+      hsl(271 81% 56% / 0.2)
+    );
+    --shadow-glow: 0 0 40px hsl(189 94% 43% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(220 26% 0% / 0.5);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    background: linear-gradient(
+      135deg,
+      hsl(220 26% 6%) 0%,
+      hsl(220 40% 10%) 100%
+    );
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px hsl(189 94% 43% / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(189 94% 43% / 0.6), 0 0 60px hsl(271 81% 56% / 0.3);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out forwards;
+}
