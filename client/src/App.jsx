@@ -12,9 +12,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
       </Routes>
     </>
-
-
   )
 }
 
-export default App
+export default App;
