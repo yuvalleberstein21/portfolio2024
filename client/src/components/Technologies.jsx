@@ -1,13 +1,13 @@
 import { Card } from "../components/ui/Card";
 
 
-export const Technologies = () => {
+const Technologies = () => {
     const technologies = [
         { name: "HTML5", category: "Language", color: "from-red-500 to-rose-600" },
         { name: "React", category: "Frontend", color: "from-cyan-500 to-blue-500" },
         { name: "TypeScript", category: "Language", color: "from-blue-500 to-indigo-500" },
         { name: "Node.js", category: "Backend", color: "from-green-500 to-emerald-600" },
-        { name: "Express.js", category: "Framework", color: "from-green-500 to-emerald-600" },
+        { name: "Express", category: "Framework", color: "from-green-500 to-emerald-600" },
         { name: "MySQL", category: "Database", color: "from-blue-600 to-cyan-600" },
         { name: "Tailwind CSS", category: "Styling", color: "from-cyan-400 to-sky-500" },
         { name: "MongoDB", category: "Database", color: "from-green-600 to-lime-600" },
@@ -51,3 +51,4 @@ export const Technologies = () => {
         </section>
     );
 };
+export default Technologies;

@@ -1,8 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
-import { Button } from '../components/ui/Button';
+import { Button } from './ui/Button';
 
 import heroImage from '../assets/Hero.jpeg';
-// import SectionBanner from '../components/SectionBanner'
 
 
 const Hero = () => {
@@ -63,7 +62,7 @@ const Hero = () => {
 
                     <div className="flex gap-8 justify-center">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/yuvalleberstein21"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 rounded-full border border-border hover:border-primary/50 hover:bg-primary/5 smooth-transition"
@@ -71,7 +70,7 @@ const Hero = () => {
                             <Github className="h-5 w-5" />
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/yuval-leberstein"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 rounded-full border border-border hover:border-primary/50 hover:bg-primary/5 smooth-transition"
@@ -83,7 +82,7 @@ const Hero = () => {
 
                 <button
                     onClick={() => scrollToSection('about')}
-                    className="absolute -bottom-20 center -translate-x-1/2 animate-bounce"
+                    className="absolute -bottom-12 center -translate-x-1/2 animate-bounce"
                 >
                     <ArrowDown className="h-6 w-6 text-primary" />
                 </button>

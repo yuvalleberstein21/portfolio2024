@@ -1,13 +1,11 @@
-
-import Header from '../components/Header'
-import BannerPage from './BannerPage'
-import { Technologies } from './Technologies'
-import Projects from './Projects'
-
-import ContactMe from './ContactMe'
-import Footer from '../components/Footer'
 import Hero from './BannerPage'
 import About from './AboutMe';
+import Technologies from './Technologies'
+import Projects from './Projects'
+import Contact from './Contact';
+import { FloatingWhatsApp } from './FloatingWhatsApp';
+import AccessibilityButton from './AccessibilityButton';
+
 
 const AppRoutes = () => {
     return (
@@ -15,11 +13,10 @@ const AppRoutes = () => {
             <Hero />
             <About />
             <Technologies />
-            {/* <Projects />
+            <Projects />
             <Contact />
-
             <FloatingWhatsApp />
-            <AccessibilityButton /> */}
+            <AccessibilityButton />
 
             <footer className="py-8 border-t border-border/50">
                 <div className="container mx-auto px-4 text-center">

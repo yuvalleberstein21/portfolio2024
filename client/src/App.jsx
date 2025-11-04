@@ -1,5 +1,5 @@
 import './App.css'
-import AppRoutes from './pages/AppRoutes'
+import AppRoutes from './components/AppRoutes'
 import { Route, Routes } from 'react-router-dom';
 import Resume from './pages/Resume';
 
