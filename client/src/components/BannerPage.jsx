@@ -1,6 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
 import { Button } from './ui/Button';
-
 import heroImage from '../assets/Hero.jpeg';
 
 
