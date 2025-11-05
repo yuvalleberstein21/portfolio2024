@@ -147,7 +147,7 @@ const Contact = () => {
                                     bg-background/50 
                                     text-gray-900 
                                     font-semibold 
-                                    text-lg 
+                                    text-sm
                                     tracking-wide      
                                     px-4 py-3"
                                 />
@@ -168,7 +168,7 @@ const Contact = () => {
                                     bg-background/50 
                                     text-gray-900 
                                     font-semibold 
-                                    text-lg 
+                                    text-sm
                                     tracking-wide      
                                     px-4 py-3"
                                 />
@@ -189,7 +189,7 @@ const Contact = () => {
                                     bg-background/50 
                                     text-gray-900 
                                     font-semibold 
-                                    text-lg 
+                                    text-sm 
                                     tracking-wide      
                                     px-4 py-3"
                                 />

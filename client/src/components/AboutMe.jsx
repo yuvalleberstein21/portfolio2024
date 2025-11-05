@@ -55,7 +55,7 @@ const About = () => {
                         </p>
 
                         <p className="text-lg leading-relaxed text-foreground/90">
-                            With years of experience in both frontend and backend development, I bring ideas to life
+                            With 2 years of experience in both frontend and backend development, I bring ideas to life
                             through clean code, beautiful interfaces, and robust architectures.
                         </p>
 
